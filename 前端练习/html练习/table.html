@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>我的第一段 JavaScript</h1>
+
+<p>在这里，JavaScript 更改了图像的 src 属性。</p>
+
+<script>
+function light(sw) {
+  var a;
+  if (sw == 0) {
+    a = "eg_bulboff.gif"
+  } else {
+    a = "希尔顿图.webp"
+  }
+  document.getElementById('myImage').src = a;
+}
+</script>
+
+<img id="myImage" src="eg_bulboff.gif" alt="图片显示错误我是大笨蛋"  width="109" height="180">
+
+<p>
+<button type="button" onclick="light(1)">开灯</button>
+<button type="button" onclick="light(0)">关灯</button>
+</p>
+</body>
+</html>
